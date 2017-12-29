@@ -9,6 +9,7 @@
 
 import React from 'react';
 import Home from './Home';
+import MyHome from './MyHome';
 import Layout from '../../components/Layout';
 
 async function action({ fetch }) {
@@ -24,6 +25,7 @@ async function action({ fetch }) {
     title: 'React Starter Kit',
     component: (
       <Layout>
+        <MyHome />
         <Home news={data.news} />
       </Layout>
     ),
